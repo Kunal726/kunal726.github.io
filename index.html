@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>Review Checker : Home</title>
-
+<script>
+    function Show()
+    {
+        data = {{prediction}};
+        alert("Your Review is " + data +"!!"); 
+    }
+</script>
     
 </head>
 <body>
@@ -40,7 +46,7 @@
                   </div>
                 </div>
                 
-          <button id="predict" name="predict" onclick={alert("Your Review is " + {{prediction}} + "!!!")} class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Predict</button>
+          <button id="predict" name="predict" onclick="Show()" class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Predict</button>
         </div>
         </div>
         <br>
